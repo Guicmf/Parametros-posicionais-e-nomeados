@@ -52,3 +52,26 @@
    bool data = true;
    String oi = 'oi';
    ExibirMensagem(oi,exibirData:data);
+
+//Funções anonimas, atribuidas a variáveis ou passadas como argumento para outras funções
+    var dobrar = (int numero) =>numero*2;
+    print(dobrar(4));
+
+    //POO em dart
+
+    class Pessoa {
+        final String nome; //passando responsabilidade para construtor
+        final int idade;
+
+        //construtor: parte do código que sabe criar pessoa
+        Pessoa(this.nome,this.idade);
+        //método
+        void mostrarDados(){
+            print(object: 'Nome: $nome, Idade: $idade');
+        }
+        String toString(){
+            return "Nome $nome tem $idade anos";
+        }
+    }
+
+
